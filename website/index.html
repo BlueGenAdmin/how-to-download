@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <link rel="icon" type="image/x-icon" href="img/logo-only.ico">
+  <title>Material Design for Bootstrap</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+</head>
+
+<body>
+  <!--Main Navigation-->
+  <header>
+    <style>
+      @font-face {
+        font-family: lemon-milk-regular;
+        src: url('fonts/lemon_milk/LEMONMILK-Regular.otf');
+      }
+      /* Carousel styling */
+      #introCarousel,
+      .carousel-inner,
+      .carousel-item,
+      .carousel-item.active {
+        height: 100vh;
+      }
+
+      .carousel-item:nth-child(1) {
+        background-image: url('img/bg\ 1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      .carousel-item:nth-child(2) {
+        background-image: url('img/bg\ 2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      .carousel-item:nth-child(3) {
+        background-image: url('img/bg3.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      .carousel-item:nth-child(4) {
+        background-image: url('img/bg4.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      .carousel-item:nth-child(5) {
+        background-image: url('img/bg5.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+      /** .carousel-item:nth-child(6) {
+        background-image: url('img/bg6.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      } */
+
+      .carousel-control-next,
+      .carousel-control-prev,
+      .carousel-indicators
+      {
+        filter: invert(100%);
+      }
+
+      .see-through-bg {
+        background-color: rgba(255,255,255, .25);
+      }
+
+      .my-font {
+        font-family: lemon-milk-regular;
+      }
+
+      .my-font-xl {
+        font-family: lemon-milk-regular;
+        font-size: 7rem;
+      }
+
+      .responsive-title {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .mtt {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 4rem;
+      }
+
+      .mtt_samples > img {
+        height: 500;
+        padding: 50% 0;
+      }
+
+      #message {
+        height: 200px;
+      }
+
+      .small-text {
+        font-size: medium;
+      }
+
+      /* Height for devices larger than 576px */
+      @media only screen and (min-width: 992px) {
+        #introCarousel {
+          margin-top: -58.59px;
+        }
+      }
+
+      @media only screen and (max-width: 480px) {
+        .my-font-xl {
+          font-size: 3rem;
+        }
+        .responsive-title {
+          display: block;
+        }
+        .mtt {
+          height: 190px;
+          position: absolute;
+          top: 1.5rem;
+        }
+        
+        .mtt_samples {
+          height: 300px;
+        }
+      }
+      .navbar .nav-link {
+        color: #fff !important;
+      }
+      .border-down {
+        border-bottom: 5px #000 solid;
+        width: 50%;
+        margin: auto;
+        margin-bottom: 20px;
+      }
+
+      @media only screen and (max-width: 412px) {
+        .mtt {
+          height: 150px;
+          position: absolute;
+          top: 3rem;
+        }
+        .mtt_samples {
+          height: 300px;
+        }
+
+        
+        .small-text {
+          font-size: small;
+        }
+      }
+
+      @media only screen and (max-width: 375px) {
+        .mtt {
+          height: 75px;
+          position: absolute;
+          top: 1.5rem;
+        }
+
+        #message {
+          height: 100px;
+        }
+      }
+
+      @media only screen and (max-width: 360px) {
+        .mtt {
+          height: 125px;
+          position: absolute;
+          top: 1.8rem;
+        }
+      }
+      
+    </style>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-sm-top d-lg-block bg-white" style="z-index: 2000;">
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand nav-link my-font" href="/index.html">
+          <img height="30" width="26" src="img/logo-only.ico" alt="" class="d-inline-block">
+          <span style="color: red">&nbsp;ACE&nbsp;</span>
+          <span style="color: black">ADVANTAGE</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars text-black"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="my-font text-black text-center" aria-current="page" href="/policy.html">
+                Policy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Carousel wrapper -->
+    <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="0" class="active"></li>
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="1"></li>
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="2"></li>
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="3"></li>
+        <!-- <li data-mdb-target="#introCarousel" data-mdb-slide-to="4"></li> -->
+        <!-- <li data-mdb-target="#introCarousel" data-mdb-slide-to="5"></li> -->
+      </ol>
+
+      <!-- Inner -->
+      <div class="carousel-inner">
+        <!-- Single item -->
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-black text-center responsive-title">
+              <img height="160" src="img/logo-only.ico" alt="ace advantage logo">
+              <p style="color: red;" class="my-font-xl">ACE</p><p class="my-font-xl">ADVANTAGE</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Single item -->
+        <!-- About us -->
+        <div class="carousel-item">
+          <div class="d-flex flex-column justify-content-center align-items-center h-100">
+            <div class="rounded shadow py-5 m-3 container">
+              <h2 class="my-font text-center text-black">Who are we?</h2>
+              <div class="border-down"></div>
+              <p class="text-center small-text text-black px-5">Ace Advantage is one of the pioneering clubs in the world of Mil Poker! Founded with a passion for the game and a commitment to excellence, Ace Advantage has become synonymous with innovation, strategic gameplay, and an unparalleled gaming experience. With a dedicated community of skilled poker players, we provide a platform where poker enthusiasts can hone their skills, compete, and connect. Our club takes pride in providing a fair and secure environment, ensuring that every player has an equal chance to succeed. Join Ace Advantage today and discover the thrill of Mil Poker.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <!-- MTT -->
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="rounded shadow m-3 container">
+              <img src="img/MTT.png" height="250" class="mtt" alt="MTT">
+              <div class="row">
+                <div class="col" style="display: flex; flex-direction:column; justify-content: center">
+                  <img src="img/MTT_Images.png" height="600" class="mtt_samples my-md-5" alt="mtt samples">
+                </div>
+                <div class="col" style="display: flex; flex-direction:column; justify-content: center">
+                  <div class="my-md-5">
+                    <h2 class="text-center text-black">MTT Tournaments</h2>
+                  <div class="border-down"></div>
+                  <p class="text-center text-black small-text px-5 py-3">
+                    Ace Advantage's Multi-table Tournament (MTT) is the ultimate test of skill, strategy, and nerve. With a diverse range of participants from around the world, players can showcase their talent and compete for substantial prize pools. Our MTTs feature a dynamic structure that keeps the excitement levels high, with escalating blinds and increasing stakes as the tournament progresses. Experience the adrenaline rush as you navigate through multiple tables, making calculated moves and outplaying your opponents. Join Ace Advantage's MTT and prove your skills in the most challenging and rewarding Mil Poker tournament.
+                  </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <!-- Squid Game -->
+        <!-- <div class="carousel-item">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="rounded shadow py-5 m-3 container">
+              <h2 class="my-font text-center text-black">Squid Game</h2>
+              <div class="border-down"></div>
+              <p class="text-center text-black px-5">Stay tuned!</p>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- Single item -->
+        <!-- Form Contact US -->
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="d-flex my-font rounded shadow p-3 m-5">
+              <div class="row row-cols-auto">
+                <div class="col-12">
+                  <p class="text-start text-black px-3 mx-3">
+                    Wanna check us out?
+                  </p>
+                  <p class="text-start px-3 mx-3">Here at</p>
+                  <div class="row">
+                    <div class="col-6">
+                      <a href="https://www.facebook.com/aceadvantages" target="_blank" >
+                        <img src="svg/facebook.svg" height="40" width="40" class="ms-4 ms-4 mb-2" target="_blank">
+                      </a>
+                    </div>
+                    <div class="col-6">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <!-- form submission -->
+                  <div class="row row-cols-2">
+                    <div class="col-md-6">
+                      <div class="form-floating mb-3">
+                        <input style="border: 3px solid #000;" type="text" class="form-control" id="name" placeholder="juan dela cruz">
+                        <label for="name">name</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-floating mb-3">
+                        <input style="border: 3px solid #000;" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">email</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input style="border: 3px solid #000;" type="text" class="form-control" id="subject" placeholder="subject: helloworld">
+                    <label for="subject">what do you need?</label>
+                  </div>
+                  <div class="form-floating">
+                    <textarea style="border: 3px solid #000;" class="form-control" id="message" placeholder="Leave a comment here"></textarea>
+                    <label for="message">Leave some us some message!</label>
+                  </div>
+
+                  <p class="text-end text-black p-2 m-2">
+                    Want to know more? We'll let you know
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Inner -->
+
+      <!-- Controls -->
+      <a class="carousel-control-prev" href="#introCarousel" role="button" data-mdb-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#introCarousel" role="button" data-mdb-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- Carousel wrapper -->
+  </header>
+  <!--Main Navigation-->
+
+  <!-- MDB -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
