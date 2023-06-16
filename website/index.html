@@ -156,7 +156,12 @@
         margin-bottom: 20px;
       }
 
-      @media only screen and (max-width: 412px) {
+      .squid {
+        height: 550;
+        padding: 50% 0;
+      }
+
+      @media only screen and (max-width: 414px) {
         .mtt {
           height: 150px;
           position: absolute;
@@ -171,6 +176,10 @@
         .small-text {
           font-size: small;
         }
+
+        .squid {
+          height: 200px;
+        }
       }
 
       @media only screen and (max-width: 375px) {
@@ -180,8 +189,16 @@
           top: 1.5rem;
         }
 
+        .mtt_samples {
+          height: 150px;
+        }
+
         #message {
           height: 100px;
+        }
+
+        .squid {
+          height: 150px;
         }
       }
 
@@ -190,6 +207,10 @@
           height: 125px;
           position: absolute;
           top: 1.8rem;
+        }
+        
+        .squid {
+          display: none;
         }
       }
     </style>
@@ -227,7 +248,7 @@
         <li data-mdb-target="#introCarousel" data-mdb-slide-to="1"></li>
         <li data-mdb-target="#introCarousel" data-mdb-slide-to="2"></li>
         <li data-mdb-target="#introCarousel" data-mdb-slide-to="3"></li>
-        <!-- <li data-mdb-target="#introCarousel" data-mdb-slide-to="4"></li> -->
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="4"></li>
         <!-- <li data-mdb-target="#introCarousel" data-mdb-slide-to="5"></li> -->
       </ol>
 
@@ -251,7 +272,11 @@
             <div class="rounded shadow py-5 m-3 container">
               <h2 class="my-font text-center text-black">Who are we?</h2>
               <div class="border-down"></div>
-              <p class="text-center small-text text-black px-5">Ace Advantage is one of the pioneering clubs in the world of Mil Poker! Founded with a passion for the game and a commitment to excellence, Ace Advantage has become synonymous with innovation, strategic gameplay, and an unparalleled gaming experience. With a dedicated community of skilled poker players, we provide a platform where poker enthusiasts can hone their skills, compete, and connect. Our club takes pride in providing a fair and secure environment, ensuring that every player has an equal chance to succeed. Join Ace Advantage today and discover the thrill of Mil Poker.
+              <div class="row justify-content-center">
+                <div class="col-md-10">
+                  <p class="text-center small-text text-black px-5">Ace Advantage is one of the pioneering clubs in the world of Mil Poker! Founded with a passion for the game and a commitment to excellence, Ace Advantage has become synonymous with innovation, strategic gameplay, and an unparalleled gaming experience. With a dedicated community of skilled poker players, we provide a platform where poker enthusiasts can hone their skills, compete, and connect. Our club takes pride in providing a fair and secure environment, ensuring that every player has an equal chance to succeed. Join Ace Advantage today and discover the thrill of Mil Poker.
+                </div>
+              </div>
               </p>
             </div>
           </div>
@@ -269,7 +294,7 @@
                 </div>
                 <div class="col" style="display: flex; flex-direction:column; justify-content: center">
                   <div class="my-md-5">
-                    <h2 class="text-center text-black">MTT Tournaments</h2>
+                    <h2 class="text-center text-black my-font">MTT Tournaments</h2>
                     <div class="border-down"></div>
                     <p class="text-center text-black small-text px-5 py-3">
                       Ace Advantage's Multi-table Tournament (MTT) is the ultimate test of skill, strategy, and nerve. With a diverse range of participants from around the world, players can showcase their talent and compete for substantial prize pools. Our MTTs feature a dynamic structure that keeps the excitement levels high, with escalating blinds and increasing stakes as the tournament progresses. Experience the adrenaline rush as you navigate through multiple tables, making calculated moves and outplaying your opponents. Join Ace Advantage's MTT and prove your skills in the most challenging and rewarding Mil Poker tournament.
@@ -283,15 +308,28 @@
 
         <!-- Single item -->
         <!-- Squid Game -->
-        <!-- <div class="carousel-item">
+        <div class="carousel-item">
           <div class="d-flex justify-content-center align-items-center h-100">
-            <div class="rounded shadow py-5 m-3 container">
-              <h2 class="my-font text-center text-black">Squid Game</h2>
-              <div class="border-down"></div>
-              <p class="text-center text-black px-5">Stay tuned!</p>
+            <div class="rounded shadow m-3 py-4 container">
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <div style="display: flex; flex-direction: column; justify-content: center">
+                    <img src="img/squidgame.png" class="px-5">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="my-md-5">
+                    <h2 class="text-center text-black my-font">Squid Texas Hold'em</h2>
+                    <div class="border-down"></div>
+                    <p class="text-center text-black small-text px-5 py-3">
+                      Squid Poker is a thrilling variant of the classic Texas Hold'em poker game. It retains the core rules and structure of its predecessor but introduces an intriguing twist: the concept of the Squid Deposit. The Squid Deposit is a predetermined amount that players must pay aside from the minimum buy-in. The objective is simple: avoid being the last player who does not win a squid, as doing so results in the loss of the entire Squid Deposit and distributing it evenly to other players. The Squid Deposit has quickly become a defining feature of Squid Texas Hold'em, creating an intense and competitive environment where every decision matters. Players are incentivized to adopt new strategies and carefully assess their moves, as a single misstep could cost them their deposit and potentially leave them with empty pockets.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div> -->
+        </div>
 
         <!-- Single item -->
         <!-- Form Contact US -->
