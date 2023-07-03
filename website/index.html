@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
   <!-- MDB -->
   <link rel="stylesheet" href="css/mdb.min.css" />
+
+  
 </head>
 
 <body>
@@ -240,11 +242,22 @@
                 How To's
               </a>
             </li>
+            <br>
             <li class="nav-item">
               <a class="my-font text-black text-center" aria-current="page" href="download.html">
                 Downloads
               </a>
             </li>
+            <br>
+            <li class="nav-item">
+              <a class="m-lg-4 my-font text-black text-center" aria-current="page" href="#">
+                <select id="languageSelect" onchange="changeLanguage()"style="border:none">
+                  <option value="en">English</option>
+                  <option value="chi">Chinese</option>
+                </select>
+              </a>
+            </li>
+
           </ul>
         </div>
       </div>
@@ -270,8 +283,8 @@
           <div class="d-flex justify-content-center align-items-center h-100">
             <div class="text-black text-center responsive-title">
               <img height="160" src="img/logo-only.ico" alt="ace advantage logo">
-              <p style="color: red;" class="my-font-xl">ACE</p>
-              <p class="my-font-xl">ADVANTAGE</p>
+              <p style="color: red;" class="my-font-xl" id="text">ACE</p>
+              <p class="my-font-xl" id="jomz">ADVANTAGE</p>
             </div>
           </div>
         </div>
@@ -281,11 +294,11 @@
         <div class="carousel-item">
           <div class="d-flex flex-column justify-content-center align-items-center h-100">
             <div class="rounded shadow py-5 m-3 container">
-              <h2 class="my-font text-center text-black">Who are we?</h2>
+              <h2 class="my-font text-center text-black" id="whoAreWe">Who are we?</h2>
               <div class="border-down"></div>
               <div class="row justify-content-center">
                 <div class="col-md-10">
-                  <p class="text-center small-text text-black px-5">Ace Advantage is one of the pioneering clubs in the world of Mil Poker! Founded with a passion for the game and a commitment to excellence, Ace Advantage has become synonymous with innovation, strategic gameplay, and an unparalleled gaming experience. With a dedicated community of skilled poker players, we provide a platform where poker enthusiasts can hone their skills, compete, and connect. Our club takes pride in providing a fair and secure environment, ensuring that every player has an equal chance to succeed. Join Ace Advantage today and discover the thrill of Mil Poker.
+                  <p class="text-center small-text text-black px-5" id="whoAreWe2">Ace Advantage is one of the pioneering clubs in the world of Mil Poker! Founded with a passion for the game and a commitment to excellence, Ace Advantage has become synonymous with innovation, strategic gameplay, and an unparalleled gaming experience. With a dedicated community of skilled poker players, we provide a platform where poker enthusiasts can hone their skills, compete, and connect. Our club takes pride in providing a fair and secure environment, ensuring that every player has an equal chance to succeed. Join Ace Advantage today and discover the thrill of Mil Poker.
                 </div>
               </div>
               </p>
@@ -305,9 +318,9 @@
                 </div>
                 <div class="col" style="display: flex; flex-direction:column; justify-content: center">
                   <div class="my-md-5">
-                    <h2 class="text-center text-black my-font">MTT Tournaments</h2>
+                    <h2 class="text-center text-black my-font" id="mtt">MTT Tournaments</h2>
                     <div class="border-down"></div>
-                    <p class="text-center text-black small-text px-5 py-3">
+                    <p class="text-center text-black small-text px-5 py-3" id="mtt2">
                       Ace Advantage's Multi-table Tournament (MTT) is the ultimate test of skill, strategy, and nerve. With a diverse range of participants from around the world, players can showcase their talent and compete for substantial prize pools. Our MTTs feature a dynamic structure that keeps the excitement levels high, with escalating blinds and increasing stakes as the tournament progresses. Experience the adrenaline rush as you navigate through multiple tables, making calculated moves and outplaying your opponents. Join Ace Advantage's MTT and prove your skills in the most challenging and rewarding Mil Poker tournament.
                     </p>
                   </div>
@@ -330,9 +343,9 @@
                 </div>
                 <div class="col-md-6">
                   <div class="my-md-5">
-                    <h2 class="text-center text-black my-font">Squid Texas Hold'em</h2>
+                    <h2 class="text-center text-black my-font" id="squidTexasHoldem">Squid Texas Hold'em</h2>
                     <div class="border-down"></div>
-                    <p class="text-center text-black small-text px-5 py-3">
+                    <p class="text-center text-black small-text px-5 py-3" id="squidTexasHoldem2">
                       Squid Poker is a thrilling variant of the classic Texas Hold'em poker game. It retains the core rules and structure of its predecessor but introduces an intriguing twist: the concept of the Squid Deposit. The Squid Deposit is a predetermined amount that players must pay aside from the minimum buy-in. The objective is simple: avoid being the last player who does not win a squid, as doing so results in the loss of the entire Squid Deposit and distributing it evenly to other players. The Squid Deposit has quickly become a defining feature of Squid Texas Hold'em, creating an intense and competitive environment where every decision matters. Players are incentivized to adopt new strategies and carefully assess their moves, as a single misstep could cost them their deposit and potentially leave them with empty pockets.
                     </p>
                   </div>
@@ -349,10 +362,10 @@
             <div class="d-flex my-font rounded shadow p-3 m-5">
               <div class="row row-cols-auto">
                 <div class="col-12">
-                  <p class="text-start text-black px-3 mx-3">
+                  <p class="text-start text-black px-3 mx-3" id="wannaChkOut">
                     Wanna check us out?
                   </p>
-                  <p class="text-start px-3 mx-3">Here at</p>
+                  <p class="text-start px-3 mx-3"id="wannaChkOut2">Here at</p>
                   <div class="row">
                     <div class="col-6">
                       <a href="https://www.facebook.com/aceadvantages" target="_blank">
@@ -373,30 +386,30 @@
                       <div class="col-md-6">
                         <div class="form-floating mb-3">
                           <input style="border: 3px solid #000;" type="text" class="form-control" name="name" id="name" placeholder="juan dela cruz">
-                          <label for="name">name</label>
+                          <label for="name"id="wannaChkOut3">name</label>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-floating mb-3">
                           <input style="border: 3px solid #000;" type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                          <label for="floatingInput">email</label>
+                          <label for="floatingInput"id="wannaChkOut4">email</label>
                         </div>
                       </div>
                     </div>
                     <div class="form-floating mb-3">
                       <input style="border: 3px solid #000;" type="text" class="form-control" name="subject" id="subject" placeholder="subject: helloworld">
-                      <label for="subject">what do you need?</label>
+                      <label for="subject"id="wannaChkOut5">what do you need?</label>
                     </div>
                     <div class="form-floating mb-3">
                       <textarea style="border: 3px solid #000;" name="message" class="form-control" id="message" placeholder="Leave a comment here"></textarea>
-                      <label for="message">Leave some us some message!</label>
+                      <label for="message"id="wannaChkOut6">Leave some us some message!</label>
                     </div>
                     <div class="form-group">
-                      <input type="submit" value="Hit us up!" class="btn btn-light">
+                      <input type="submit"value="Hit us up!" class="btn btn-light">
                     </div>
                   </form>
 
-                  <p class="text-end text-black p-2 m-2">
+                  <p class="text-end text-black p-2 m-2"id="wannaChkOut7">
                     Want to know more? We'll let you know
                   </p>
                 </div>
@@ -423,6 +436,7 @@
 
   <!-- MDB -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script src="js/language.js"></script>
   <!-- Custom scripts -->
   <script type="text/javascript" src="js/script.js"></script>
 </body>
