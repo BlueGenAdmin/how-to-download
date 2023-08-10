@@ -13,8 +13,9 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
   <!-- MDB -->
   <link rel="stylesheet" href="css/mdb.min.css" />
+  <link rel="stylesheet" href="style.css">
 
-  
+  <script src="https://kit.fontawesome.com/f385065ad8.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -210,7 +211,7 @@
           position: absolute;
           top: 1.8rem;
         }
-        
+
         .squid {
           display: none;
         }
@@ -238,7 +239,7 @@
             </li>
             <br>
             <li class="nav-item">
-              <a class="m-lg-4 my-font text-black text-center" aria-current="page" href="https://www.milpoker.info/pages/poker_pc">
+              <a class="m-lg-4 my-font text-black text-center" aria-current="page" href="http://download.ace-advantage.com">
                 How To's
               </a>
             </li>
@@ -251,7 +252,7 @@
             <br>
             <li class="nav-item">
               <a class="m-lg-4 my-font text-black text-center" aria-current="page" href="#">
-                <select id="languageSelect" onchange="changeLanguage()"style="border:none">
+                <select id="languageSelect" onchange="changeLanguage()" style="border:none">
                   <option value="en">English</option>
                   <option value="chi">Chinese</option>
                 </select>
@@ -365,7 +366,7 @@
                   <p class="text-start text-black px-3 mx-3" id="wannaChkOut">
                     Wanna check us out?
                   </p>
-                  <p class="text-start px-3 mx-3"id="wannaChkOut2">Here at</p>
+                  <p class="text-start px-3 mx-3" id="wannaChkOut2">Here at</p>
                   <div class="row">
                     <div class="col-6">
                       <a href="https://www.facebook.com/aceadvantages" target="_blank">
@@ -386,30 +387,30 @@
                       <div class="col-md-6">
                         <div class="form-floating mb-3">
                           <input style="border: 3px solid #000;" type="text" class="form-control" name="name" id="name" placeholder="juan dela cruz">
-                          <label for="name"id="wannaChkOut3">name</label>
+                          <label for="name" id="wannaChkOut3">name</label>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-floating mb-3">
                           <input style="border: 3px solid #000;" type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                          <label for="floatingInput"id="wannaChkOut4">email</label>
+                          <label for="floatingInput" id="wannaChkOut4">email</label>
                         </div>
                       </div>
                     </div>
                     <div class="form-floating mb-3">
                       <input style="border: 3px solid #000;" type="text" class="form-control" name="subject" id="subject" placeholder="subject: helloworld">
-                      <label for="subject"id="wannaChkOut5">what do you need?</label>
+                      <label for="subject" id="wannaChkOut5">what do you need?</label>
                     </div>
                     <div class="form-floating mb-3">
                       <textarea style="border: 3px solid #000;" name="message" class="form-control" id="message" placeholder="Leave a comment here"></textarea>
-                      <label for="message"id="wannaChkOut6">Leave some us some message!</label>
+                      <label for="message" id="wannaChkOut6">Leave some us some message!</label>
                     </div>
                     <div class="form-group">
-                      <input type="submit"value="Hit us up!" class="btn btn-light">
+                      <input type="submit" value="Hit us up!" class="btn btn-light">
                     </div>
                   </form>
 
-                  <p class="text-end text-black p-2 m-2"id="wannaChkOut7">
+                  <p class="text-end text-black p-2 m-2" id="wannaChkOut7">
                     Want to know more? We'll let you know
                   </p>
                 </div>
@@ -430,15 +431,58 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-    <!-- Carousel wrapper -->
-  </header>
-  <!--Main Navigation-->
 
-  <!-- MDB -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>
-  <script src="js/language.js"></script>
-  <!-- Custom scripts -->
-  <script type="text/javascript" src="js/script.js"></script>
+
+
+
+
+    <div class="fabs">
+      <div class="chat">
+        <div class="chat_header">
+          <div class="chat_option">
+            <div class="header_img">
+              <!-- <img src="http://res.cloudinary.com/dqvwa7vpe/image/upload/v1496415051/avatar_ma6vug.jpg"/> -->
+            </div>
+            <span id="chat_head"> <span style="color: red">&nbsp;ACE&nbsp;</span>
+              <span style="color: black">ADVANTAGE</span></span> <br> <span class="agent">Contact Support</span> <span class="online">(Online)</span>
+            <span id="chat_fullscreen_loader" class="chat_fullscreen_loader"><i class="fullscreen zmdi zmdi-window-maximize"></i></span>
+
+
+
+          </div>
+
+        </div>
+
+
+        <div id="chat_body" class="chat_body chat_login">
+          <div class="chat_category">
+
+            <p style="font-weight: bold;text-align: center;">Message us to be a Club Owner</p>
+            <ul>
+              <a class="text-decoration:none" target="_blank" href="https://msng.link/o?639691312345=vi"><li>Viber</li></a>
+              <a class="text-decoration:none" target="_blank" href="https://www.facebook.com/aceadvantagee"><li>Facebook</li></a>
+              <a class="text-decoration:none" target="_blank" href="https://web.telegram.org/a/#6284178283"><li>Telegram</li></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <a id="prime" class="fab"><i style="color: #000;" class="prime fa-regular fa-comment"><img src="logo-only.ico" alt=""></i></a>
+    </div>
+    <script src='http://code.jquery.com/jquery-1.11.3.min.js'></script>
+
+    <script src="js/index.js"></script>
+    <script src="chat.js"></script>
+
+</body>
+
+</header>
+<!--Main Navigation-->
+
+<!-- MDB -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<script src="js/language.js"></script>
+<!-- Custom scripts -->
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
