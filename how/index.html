@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <link rel="icon" type="image/x-icon" href="img/logo-only.ico">
+  <title>Ace Advantage</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+  <link rel="stylesheet" href="css/newDesign.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+
+
+
+
+</head>
+
+<body>
+  <!--Main Navigation-->
+  <header>
+    <style>
+      @font-face {
+        font-family: lemon-milk-regular;
+        src: url('fonts/lemon_milk/LEMONMILK-Regular.otf');
+      }
+
+      /* Carousel styling */
+      #introCarousel,
+      .carousel-inner,
+      .carousel-item,
+      .carousel-item.active {
+        height: 100vh;
+      }
+
+      body {
+     text-align: center;
+     overflow: hidden;
+      }
+    
+      
+
+
+  
+
+      .carousel-item:nth-child(1) {
+        background-image: url('img/bg\ 2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      .carousel-item:nth-child(2) {
+        background-image: url('img/bg\ 2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      .carousel-item:nth-child(3) {
+        background-image: url('img/bg\ 2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      .carousel-item:nth-child(4) {
+        background-image: url('img/bg4.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      .carousel-item:nth-child(5) {
+        background-image: url('img/bg5.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      /** .carousel-item:nth-child(6) {
+        background-image: url('img/bg6.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      } */
+
+      .carousel-control-next,
+      .carousel-control-prev,
+      .carousel-indicators {
+        filter: invert(100%);
+      }
+
+      .see-through-bg {
+        background-color: rgba(255, 255, 255, .25);
+      }
+
+      .my-font {
+        font-family: lemon-milk-regular;
+      }
+
+      .my-font-xl {
+        font-family: lemon-milk-regular;
+        font-size: 7rem;
+      }
+
+      .responsive-title {
+        display: flex;
+        justify-content: center;
+      }
+
+      .mtt {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 4rem;
+      }
+
+      .mtt_samples>img {
+        height: 500;
+        padding: 50% 0;
+      }
+
+      #message {
+        height: 200px;
+      }
+
+      .small-text {
+        font-size: medium;
+      }
+
+      /* Height for devices larger than 576px */
+      @media only screen and (min-width: 992px) {
+        #introCarousel1 {
+          margin-top: -58.59px;
+        }
+      }
+
+      @media only screen and (max-width: 480px) {
+        .my-font-xl {
+          font-size: 3rem;
+        }
+
+        .responsive-title {
+          display: block;
+        }
+
+        .mtt {
+          height: 190px;
+          position: absolute;
+          top: 1.5rem;
+        }
+
+        .mtt_samples {
+          height: 300px;
+        }
+      }
+
+      .navbar .nav-link {
+        color: #fff !important;
+      }
+
+      .border-down {
+        border-bottom: 5px #000 solid;
+        width: 50%;
+        margin: auto;
+        margin-bottom: 20px;
+      }
+
+      .squid {
+        height: 550;
+        padding: 50% 0;
+      }
+
+      @media only screen and (max-width: 414px) {
+        .mtt {
+          height: 150px;
+          position: absolute;
+          top: 3rem;
+        }
+
+        .mtt_samples {
+          height: 300px;
+        }
+
+
+        .small-text {
+          font-size: small;
+        }
+
+        .squid {
+          height: 200px;
+        }
+        .downloadLink{
+          height: 2rem;
+        }
+      }
+
+      @media only screen and (max-width: 375px) {
+        .mtt {
+          height: 75px;
+          position: absolute;
+          top: 1.5rem;
+        }
+
+        .mtt_samples {
+          height: 150px;
+        }
+
+        #message {
+          height: 100px;
+        }
+
+        .squid {
+          height: 150px;
+        }
+      }
+      @media only screen and (max-width: 590px) {
+      .downloadLink{
+        height: 3rem;
+      }
+      .ace{
+        font-size: 10px;
+      }
+      }
+
+      @media only screen and (max-width: 360px) {
+        .mtt {
+          height: 125px;
+          position: absolute;
+          top: 1.8rem;
+        }
+
+        .squid {
+          display: none;
+        }
+      }
+    </style>
+
+
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-sm-top d-lg-block bg-white" style="z-index: 2000;">
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand nav-link my-font" href="index.html">
+          <img height="30" width="26" src="img/logo-only.ico" alt="" class="d-inline-block">
+      
+
+          <!-- <span style="color: red">&nbsp;ACE&nbsp;</span>
+          <span style="color: black">ADVANTAGE</span>
+        const manganese = new mongoose.-->
+        </a>
+      
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+          aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars text-black"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- <li class="nav-item">
+              <a class="my-font text-black text-center" aria-current="page" href="policy.html">
+                Policy
+              </a>
+            </li>
+            <br>
+            <li class="nav-item">
+              <a class="m-lg-4 my-font text-black text-center" aria-current="page" href="https://www.milpoker.info/pages/poker_pc">
+                How To's
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="my-font text-black text-center" aria-current="page" href="download.html">
+                Downloads
+              </a>
+            </li> -->
+            <li class="nav-item">
+              <a class="m-lg-4 my-font text-black text-center" aria-current="page" href="#">
+                <select id="languageSelect" onchange="changeLanguage()" style="border:none">
+                  <option value="en">English</option>
+                  <option value="chi">Chinese</option>
+
+
+                </select>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        <!-- Button trigger modal -->
+
+
+        <!-- Modal -->
+        <div class="modal  fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" style="height: 30rem;">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel"><span id="howToDownload">How to Download</span>
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+
+
+                <div id="introCarousel" class="carousel slide carousel-fade " style="height: 36rem;"  data-mdb-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-mdb-target="#introCarousel" data-mdb-slide-to="0" class="active"></li>
+                    <li data-mdb-target="#introCarousel" data-mdb-slide-to="1"></li>
+
+
+                    <!-- <li data-mdb-target="#introCarousel" data-mdb-slide-to="5"></li> -->
+                  </ol>
+
+                  <!-- Inner -->
+                  <div class="carousel-inner">
+                    <!-- Single item -->
+
+
+                    <!-- Single item -->
+                    <!-- About us -->
+
+
+                    <!-- Single item -->
+                    <!-- MTT -->
+                    <div class="carousel-item active" style="height: 10rem;">
+                      <div class="d-flex justify-content-center align-items-center h-90">
+                        <div class="rounded shadow m-3 container">
+                          <!-- <img src="img/MTT.png" height="250" class="mtt" alt="MTT"> -->
+                          <div class="row">
+                            <div class="col" style="display: flex; flex-direction:column; justify-content: center">
+                              <img src="img/signUp/searchPlaystore.png" height="400" class="mtt_samples my-md-5"
+                                alt="mtt samples">
+                            </div>
+                            <div class="col" style="display: flex; flex-direction:column; justify-content: center">
+                              <div class="my-md-5">
+                                <h2 class="text-center text-black my-font" id="mtt"><span id="stepOne">Step 1</span></h2>
+                                <div class="border-down"></div>
+                                <p class="text-center text-black small-text px-5 py-3" id="mtt2"><span id="appStore">
+                                    Open your app store/playstore install in your device.</span>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="carousel-item" style="height: 10rem;">
+                      <div class="d-flex justify-content-center align-items-center h-90">
+                        <div class="rounded shadow m-3 container">
+                          <!-- <img src="img/MTT.png" height="250" class="mtt" alt="MTT"> -->
+                          <div class="row">
+                            <div class="col" style="display: flex; flex-direction:column; justify-content: center">
+                              <img src="img/signUp/search.png" height="400" class="mtt_samples my-md-5"
+                                alt="mtt samples">
+                            </div>
+                            <div class="col" style="display: flex; flex-direction:column; justify-content: center">
+                              <div class="my-md-5">
+                                <h2 class="text-center text-black my-font" id="mtt"><span id="stepTwo">Step 2 </span></h2>
+                                <div class="border-down"></div>
+                                <p class="text text-black small-text px-5 py-3" id="mtt2">
+                                  <span id="hitSearch"> 1.Type Mil Poker in search bar and hit search.</span><br>
+                                  <span id="install"> 2. Click "Install" to install Mil Poker in your device.</span>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
+
+                   
+
+
+
+
+
+                    <!-- Controls -->
+                    <a class="carousel-control-prev" href="#introCarousel" role="button" data-mdb-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#introCarousel" role="button" data-mdb-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+
+
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                  
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+
+        <!-- modal how to be a club owner -->
+
+
+
+        
+
+        <!-- Modal -->
+        <div class="modal  fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" style="height: 30rem;">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel"><span id="contactUs">Contact us for applying Club Owner</span>
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body"  style="height: 32rem;margin-top: 2rem;">
+
+
+                <div id="introCarousel" class="carousel slide carousel-fade " style="height: 27rem;"  data-mdb-ride="carousel">
+                  <!-- Indicators -->
+               
+
+                  <!-- Inner -->
+                  <div class="carousel-inner">
+                    <!-- Single item -->
+
+
+                    <!-- Single item -->
+                    <!-- About us -->
+
+
+                    <!-- Single item -->
+                    <!-- MTT -->
+                    <div class="carousel-item active" style="height: 15rem;margin-top: 2rem;">
+                      <div class="d-flex justify-content-center align-items-center h-90">
+                        <div class="rounded shadow m-3 container">
+                          <!-- <img src="img/MTT.png" height="250" class="mtt" alt="MTT"> -->
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="row justify-content-center" style="margin-top:2rem;">
+                                <div class="col-md-auto align-self-center">
+                                  <div class="row justify-content-center btn-des">
+                                 <a href="https://www.facebook.com/aceadvantagee">   <button class="btn" data-bs-toggle="modal"><span id="facebook"> Facebook</span></button></a>
+                                  </div>
+                                </div>
+                                <div class="col-md-auto">
+                                  <div class="row justify-content-center btn-des">
+                                   <a href="https://msng.link/o?639691312345=vi"><button class="btn" data-bs-toggle="modal" ><span id="viber">Viber</span></button></a> 
+                                  </div>
+                                </div>
+                                <div class="col-md-auto">
+                                  <div class="row justify-content-center btn-des">
+                                  <a href="https://web.telegram.org/a/#6284178283"> <button class="btn" data-bs-toggle="modal" ><span id="telegram" >Telegram</span></button></a> 
+                  
+                                  </div>
+                                </div>
+                  
+                               
+                              </div>
+                            <div class="col" style="display: flex; flex-direction:column; justify-content: center" >
+                              <div class="my-md-5"style="margin-top: 0.7rem;">
+                                <h2 class="text-center text-black my-font" id="mtt"><span id="messageUs">Message Us</span></h2>
+                                <div class="border-down"></div>
+                                <p class="text-center text-black small-text px-5 py-3" id="mtt2"><span id="communicate">
+                                 If you want to be a club owner click the button on top to communicate in the Ace Advantage marketing team</span>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                  
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+        </div>
+        </div>
+        </div>
+        
+
+
+
+
+
+
+
+
+
+
+        <!-- Modal -->
+        <div class="modal  fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg ">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel"><span id="clubId">How to join Club ID</span></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+
+
+                <div id="introCarousel3" class="carousel slide carousel-fade "  style="height: 35rem;" data-mdb-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-mdb-target="#introCarousel3" data-mdb-slide-to="0" class="active"></li>
+                    <li data-mdb-target="#introCarousel3" data-mdb-slide-to="1"></li>
+                    <li data-mdb-target="#introCarousel3" data-mdb-slide-to="2"></li>
+                    <li data-mdb-target="#introCarousel3" data-mdb-slide-to="3"></li>
+                    <li data-mdb-target="#introCarousel3" data-mdb-slide-to="4"></li>
+                    <li data-mdb-target="#introCarousel3" data-mdb-slide-to="5"></li>
+
+                    <!-- <li data-mdb-target="#introCarousel" data-mdb-slide-to="5"></li> -->
+                  </ol>
+
+                  <!-- Inner -->
+                  <div class="carousel-inner">
+                    <!-- Single item -->
+
+
+                    <!-- Single item -->
+                    <!-- About us -->
+
+
+                    <!-- Single item -->
+                    <!-- MTT -->
+                    <div class="carousel-item active" style="height: 10rem;">
+                      <div class="d-flex justify-content-center align-items-center h-90">
+                        <div class="rounded shadow m-3 container">
+                          <!-- <img src="img/MTT.png" height="250" class="mtt" alt="MTT"> -->
+                          <div class="row">
+                            <div class="col" >
+                              <img src="img/signUp/joinTheClub.png" height="400" class="mtt_samples my-md-5"
+                                alt="mtt samples">
+                            </div>
+                            <div class="col" style="display: flex; flex-direction:column; justify-content: center">
+                              <div class="my-md-5">
+                                <h2 class="text-center text-black my-font" id="mtt"><span id="stepOf">Step 1</span>
+                                </h2>
+                                <div class="border-down"></div>
+                                <p class="text-center text-black small-text px-5 py-3" id="mtt2">
+                                  <span id="joinIn"> Tap "Join In" to enter the club.</span>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="carousel-item" style="height: 10rem;">
+                      <div class="d-flex justify-content-center align-items-center h-90">
+                        <div class="rounded shadow m-3 container">
+                          <!-- <img src="img/MTT.png" height="250" class="mtt" alt="MTT"> -->
+                          <div class="row">
+                            <div class="col" style="display: flex; flex-direction:column; justify-content: center">
+                              <img src="img/signUp/clubInvitation.png" height="400" class="mtt_samples my-md-5"
+                                alt="mtt samples">
+                            </div>
+                            <div class="col" style="display: flex; flex-direction:column; justify-content: center">
+                              <div class="my-md-5">
+                                <h2 class="text-center text-black my-font" id="mtt"><span id="stepTwoof">Step 2</span>
+                                </h2>
+                                <div class="border-down"></div>
+                                <p class="text-center text-black small-text px-5 py-3" id="mtt2">
+                                  <span id="enterTheClub"> Enter the club ID.</span>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                    <div class="carousel-item" style="height: 10rem;">
+                      <div class="d-flex justify-content-center align-items-center h-90">
+                        <div class="rounded shadow m-3 container">
+                          <!-- <img src="img/MTT.png" height="250" class="mtt" alt="MTT"> -->
+                          <div class="row">
+                            <div class="col" style="display: flex; flex-direction:column; justify-content: center">
+                              <img src="img/signUp/mcoins.png" height="400" class="mtt_samples my-md-5"
+                                alt="mtt samples">
+                            </div>
+                            <div class="col" style="display: flex; flex-direction:column; justify-content: center">
+                              <div class="my-md-5">
+                                <h2 class="text-center text-black my-font" id="mtt"><span id="stepThree">Step 3</span></h2>
+                                <div class="border-down"></div>
+                                <p class="text text-black small-text px-5 py-3" id="mtt2">
+                                  <span id="buyM"> 1. Buy M-Chips to play.</span><br>
+                                  <span id="enterAmount"> 2.Enter the amount you want to exchange</span>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
+                    <div class="carousel-item" style="height: 10rem;">
+                      <div class="d-flex justify-content-center align-items-center h-90">
+                        <div class="rounded shadow m-3 container">
+                          <!-- <img src="img/MTT.png" height="250" class="mtt" alt="MTT"> -->
+                          <div class="row">
+                            <div class="col" style="display: flex; flex-direction:column; justify-content: center">
+                              <img src="img/signUp/BindEmail.png" height="400" class="mtt_samples my-md-5"
+                                alt="mtt samples">
+                            </div>
+                            <div class="col" style="display: flex; flex-direction:column; justify-content: center">
+                              <div class="my-md-5">
+                                <h2 class="text-center text-black my-font" id="mtt"><span id="stepFour"> Step 4</span></h2>
+                                <div class="border-down"></div>
+                                <p class="text-center text-black small-text px-5 py-3" id="mtt2">
+                                  <span id="bindEmail">Click the settings and bind email for secure transaction.</span>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="carousel-item" style="height: 10rem;">
+                      <div class="d-flex justify-content-center align-items-center h-90">
+                        <div class="rounded shadow m-3 container">
+                          <!-- <img src="img/MTT.png" height="250" class="mtt" alt="MTT"> -->
+                          <div class="row">
+                            <div class="col" style="display: flex; flex-direction:column; justify-content: center">
+                              <img src="img/signUp/fansMessage.png" height="400" class="mtt_samples my-md-5"
+                                alt="mtt samples">
+                            </div>
+                            <div class="col" style="display: flex; flex-direction:column; justify-content: center">
+                              <div class="my-md-5">
+                                <h2 class="text-center text-black my-font" id="mtt"><span id="stepFive">Step 5</span>
+                                </h2>
+                                <div class="border-down"></div>
+                                <p class="text-center text-black small-text px-5 py-3" id="mtt2">
+                                  <span id="requestSent"> Your request sent to club owner.</span>
+
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                    <div class="carousel-item">
+                      <div class="d-flex flex-column justify-content-center align-items-center h-100">
+                        <div class="rounded shadow py-5 m-3 container">
+                          <h2 class="my-font text-center text-black" id="whoAreWe"><span id="stepSix">Step 6</span></h2>
+                          <div class="border-down"></div>
+                          <div class="row justify-content-center">
+                            <div class="col-md-10">
+                              <p class="text-center small-text text-black px-5" id="whoAreWe2"><span
+                                  id="contactClub">Contact your club owner for your M-Chips transaction.</span>
+                            </div>
+                          </div>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
+                    <!-- Controls -->
+                    <a class="carousel-control-prev" href="#introCarousel3" role="button" data-mdb-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#introCarousel3" role="button" data-mdb-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+
+
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="modal  fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg ">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel"><span id="howToReg">How to Register</span></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+
+
+                <div id="introCarousel2" class="carousel slide carousel-fade " style="height: 37rem;" data-mdb-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-mdb-target="#introCarousel2" data-mdb-slide-to="0" class="active"></li>
+                    <li data-mdb-target="#introCarousel2" data-mdb-slide-to="1"></li>
+                    <li data-mdb-target="#introCarousel2" data-mdb-slide-to="2"></li>
+                    <li data-mdb-target="#introCarousel2" data-mdb-slide-to="3"></li>
+                    <!-- <li data-mdb-target="#introCarousel" data-mdb-slide-to="5"></li> -->
+                  </ol>
+
+                  <!-- Inner -->
+                  <div class="carousel-inner">
+                    <!-- Single item -->
+
+
+                    <!-- Single item -->
+                    <!-- About us -->
+
+
+                    <!-- Single item -->
+                    <!-- MTT -->
+                    <div class="carousel-item active" style="height: 10rem;">
+                      <div class="d-flex justify-content-center align-items-center h-90">
+                        <div class="rounded shadow m-3 container">
+                          <!-- <img src="img/MTT.png" height="250" class="mtt" alt="MTT"> -->
+                          <div class="row">
+                            <div class="col" style="display: flex; flex-direction:column; justify-content: center">
+                              <img src="img/signUp/signUp.png" height="400" class="mtt_samples my-md-5"
+                                alt="mtt samples">
+                            </div>
+                            <div class="col" style="display: flex; flex-direction:column; justify-content: center">
+                              <div class="my-md-5">
+                                <h2 class="text-center text-black my-font" id="mtt"><span id="stepOneReg">Step 1</span></h2>
+                                <div class="border-down"></div>
+                                <p class="text text-black small-text px-5 py-3" id="mtt2">
+                                 <span id="signUp">Sign up to register your account</span> <br><span id="enterUser">1.Enter username.</span><br><span id="enterPass">2.Enter password.</span><br><span id="enterInvitational">3.Enter
+                                  your invitation code(optional).</span><br><span id="clickSignUp">4.Click signup.</span>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="carousel-item" style="height: 10rem;">
+                      <div class="d-flex justify-content-center align-items-center h-90">
+                        <div class="rounded shadow m-3 container">
+                          <!-- <img src="img/MTT.png" height="250" class="mtt" alt="MTT"> -->
+                          <div class="row">
+                            <div class="col" style="display: flex; flex-direction:column; justify-content: center">
+                              <img src="img/signUp/changeUsername.png" height="400" class="mtt_samples my-md-5"
+                                alt="mtt samples">
+                            </div>
+                            <div class="col" style="display: flex; flex-direction:column; justify-content: center">
+                              <div class="my-md-5">
+                                <h2 class="text-center text-black my-font" id="mtt"><span id="stepTwoReg">Step 2</span></h2>
+                                <div class="border-down"></div>
+                                <p class="text-center text-black small-text px-5 py-3" id="mtt2">
+                                  <span id="inGameName">You can choose your in game name.</span>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="carousel-item" style="height: 10rem;">
+                      <div class="d-flex justify-content-center align-items-center h-90">
+                        <div class="rounded shadow m-3 container">
+                          <!-- <img src="img/MTT.png" height="250" class="mtt" alt="MTT"> -->
+                          <div class="row">
+                            <div class="col" style="display: flex; flex-direction:column; justify-content: center">
+                              <img src="img/signUp/Lobby.png" height="400" class="mtt_samples my-md-5"
+                                alt="mtt samples">
+                            </div>
+                            <div class="col" style="display: flex; flex-direction:column; justify-content: center">
+                              <div class="my-md-5">
+                                <h2 class="text-center text-black my-font" id="mtt"><span id="stepThreeReg">Step 3</span></h2>
+                                <div class="border-down"></div>
+                                <p class="text-center text-black small-text px-5 py-3" id="mtt2">
+                                <span id="tapTheLobby"> Tap the "Lobby" to join the table.</span> 
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                    <div class="carousel-item" style="height: 10rem;">
+                      <div class="d-flex justify-content-center align-items-center h-90">
+                        <div class="rounded shadow m-3 container">
+                          <!-- <img src="img/MTT.png" height="250" class="mtt" alt="MTT"> -->
+                          <div class="row">
+                            <div class="col" style="display: flex; flex-direction:column; justify-content: center">
+                              <img src="img/signUp/joinLobby.png" height="400" class="mtt_samples my-md-5"
+                                alt="mtt samples">
+                            </div>
+                            <div class="col" style="display: flex; flex-direction:column; justify-content: center">
+                              <div class="my-md-5">
+                                <h2 class="text-center text-black my-font" id="mtt"><span id="stepFourReg">Step 4</span></h2>
+                                <div class="border-down"></div>
+                                <p class="text-center text-black small-text px-5 py-3" id="mtt2">
+                              <span id="clickTheTable"> Tap and join the game.</span>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <!-- Controls -->
+                    <a class="carousel-control-prev" href="#introCarousel2" role="button" data-mdb-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#introCarousel2" role="button" data-mdb-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+
+
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                 
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+    </nav>
+
+
+
+    <!-- Single item -->
+    <div class="carousel-item active">
+      <div class="d-flex justify-content-center align-items-center h-90">
+        <div class="row justify-content-center">
+          <div class="col">
+            <div class="text-black text-center responsive-title">
+              <img height="140px" src="img/logoace.png" alt="ace advantage logo">
+              <!-- <img height="170" src="img/signUp/Mil-Poker-7-21-2023.png" alt="ace advantage logo"> -->
+             <!-- <p style="color: red;font-size: 4rem;  @media only screen and (max-width: 590px) { }" class="ace" id="text">ACE</p>
+              <p style="color: black;font-size: 4rem" class="ace" id="jomz">ADVANTAGE</p>-->
+            </div>
+
+            <div class="text-black text-center responsive-title">
+              <img height="80" src="img/icon1.png" alt="ace advantage logo">
+              <!-- <img height="170" src="img/signUp/Mil-Poker-7-21-2023.png" alt="ace advantage logo"> -->
+              <p style="color: rgb(175, 159, 87);font-size: 2rem" class="mil" id="text">MILPOKER</p>
+              <!--<p style="color: #cfc183;font-size: 3rem;" class="mil" id="jomz">POKER</p>-->
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-12">
+            <div class="row justify-content-center">
+              <div class="col-md-auto align-self-center">
+                <div class="row justify-content-center btn-des">
+                  <button class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><span id="howToDownloadButton"> How to Download</span></button>
+                </div>
+              </div>
+              <div class="col-md-auto">
+                <div class="row justify-content-center btn-des">
+                  <button class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"><span id="howToRegisterButton"> How to Register </span></button>
+                </div>
+              </div>
+              <div class="col-md-auto">
+                <div class="row justify-content-center btn-des">
+                  <button class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"><span id="howToJoinButton" >How to join club
+                    ID</span></button>
+
+                </div>
+              </div>
+
+              <div class="col-md-auto">
+                <div class="row justify-content-center btn-des">
+                  <button class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop4"><span id="howToBe" >Become a Club Owner</span></button>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="row justify-content-center my-5">
+                <div class="col-md-auto">
+                <a href="https://play.google.com/store/apps/details?id=com.bluegenesis.milpoker&hl=en-PH">  <img height="60" src="img/play-store.png" alt="ace advantage logo" class="downloadLink"></a>
+                </div>
+                <div class="col-md-auto">
+              <a href="https://apps.apple.com/ph/app/milpoker/id6448011079">    <img height="60" src="img/app-store.png" alt="ace advantage logo" class="downloadLink"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+    </div>
+
+
+
+
+
+    <!-- Carousel wrapper -->
+  </header>
+  <!--Main Navigation-->
+
+  <!-- MDB -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script src="js/language.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

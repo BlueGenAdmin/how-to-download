@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <link rel="icon" type="image/x-icon" href="img/logo-only.ico">
+  <title>Material Design for Bootstrap</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!--Main Navigation-->
+  <header>
+    <style>
+
+        @font-face {
+            font-family: lemon-milk-regular;
+            src: url('fonts/lemon_milk/LEMONMILK-Regular.otf');
+          }
+          /* Carousel styling */
+    
+          .carousel-item:nth-child(1) {
+            background-image: url('img/bg\ 1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+          }
+    
+          .carousel-item:nth-child(2) {
+            background-image: url('img/bg\ 2.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+          }
+    
+    
+          .carousel-control-next,
+          .carousel-control-prev,
+          .carousel-indicators
+          {
+            filter: invert(100%);
+          }
+    
+          .see-through-bg {
+            background-color: rgba(255,255,255, .25);
+          }
+    
+          .my-font {
+            font-family: lemon-milk-regular;
+          }
+    
+          .my-font-xl {
+            font-family: lemon-milk-regular;
+            font-size: 7rem;
+          }
+    
+          .responsive-title {
+            display: flex;
+            justify-content: space-between;
+          }
+    
+          .mtt {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 4rem;
+          }
+    
+          .mtt_samples > img {
+            height: 500;
+            padding: 50% 0;
+          }
+    
+          #message {
+            height: 200px;
+          }
+    
+          /* Height for devices larger than 576px */
+          @media only screen and (min-width: 992px) {
+            #introCarousel {
+              margin-top: -58.59px;
+            }
+          }
+    
+          @media only screen and (max-width: 480px) {
+            .my-font-xl {
+              font-size: 3rem;
+            }
+            .responsive-title {
+              display: block;
+            }
+            .mtt {
+              height: 190px;
+              position: absolute;
+              top: 1.5rem;
+            }
+            
+            .mtt_samples {
+              height: 300px;
+            }
+          }
+          .navbar .nav-link {
+            color: #fff !important;
+          }
+          .border-down {
+            border-bottom: 5px #000 solid;
+            width: 50%;
+            margin: auto;
+            margin-bottom: 20px;
+          }
+    
+          @media only screen and (max-width: 412px) {
+            .mtt {
+              height: 150px;
+              position: absolute;
+              top: 3rem;
+            }
+            .mtt_samples {
+              height: 300px;
+            }
+          }
+    
+          @media only screen and (max-width: 375px) {
+            .mtt {
+              height: 75px;
+              position: absolute;
+              top: 1.5rem;
+            }
+    
+            #message {
+              height: 100px;
+            }
+          }
+          
+    </style>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-sm-top d-lg-block bg-white" style="z-index: 2000;">
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand nav-link my-font" href="index.html">
+          <img height="30" width="26" src="img/logo-only.ico" alt="" class="d-inline-block">
+          <span style="color: red">&nbsp;ACE&nbsp;</span>
+          <span style="color: black">ADVANTAGE</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars text-black"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="my-font text-black text-center" aria-current="page" href="policy.html">
+                Policy
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="m-lg-4 my-font text-black text-center" aria-current="page" href="#">
+                <select id="languageSelect" onchange="policy()" style="border:none">
+                  <option  value="en">English</option>
+                  <option value="chi">Chinese</option>
+                  
+                  
+                </select>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+    <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="0" class="active"></li>
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="1"></li>
+        <!-- <li data-mdb-target="#introCarousel" data-mdb-slide-to="5"></li> -->
+      </ol>
+
+      <!-- Inner -->
+      <div class="carousel-inner">
+        <!-- Single item -->
+        <!-- Single item -->
+        <!-- About us -->
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="rounded shadow py-5 m-3 container">
+              <h2 class="my-font text-center text-black" id="policy44">Our Policy</h2>
+              <div class="border-down"></div>
+              <p class="text-black px-5" ><span id="policy1">Privacy Policy for Ace Advantage
+
+                Effective Date: [Date]
+
+                This Privacy Policy describes how Ace Advantage ("we," "us," or "our") collects, uses, discloses, and protects the personal information of its users ("you" or "your") in connection with your use of the Ace Advantage website, mobile application, and related services (collectively, the "Services"). By accessing or using the Services, you agree to the terms of this Privacy Policy.</span><br><br>
+
+                <span id="policy2">1. Information We Collect</span><br><br>
+
+                <span id="policy3">     1.1 Personal Information</span><br><br>
+                <span id="policy4">  We may collect personal information that you provide directly to us when you register for an account, participate in games or tournaments, communicate with us, or otherwise use our Services. This information may include:</span><br><br>
+
+                <span id="policy5"> - Your name, username, and email address.</span><br>
+                <span id="policy6">  - Your contact information, such as your address and phone number.</span><br>
+                <span id="policy7">   - Payment information, such as credit card details or other financial information.</span><br>
+                <span id="policy8"> - Any other information you choose to provide us.</span><br><br>
+
+                <span id="policy9">  1.2 Usage Information</span><br>
+                <span id="policy10"> When you use our Services, we may automatically collect certain information about your use of the Services, including:</span><br><br>
+
+                <span id="policy11"> - Device information, such as your device type, operating system, and browser type.</span><br>
+                <span id="policy12"> - Log information, such as your IP address, access times, and pages visited.</span><br>
+                <span id="policy13"> - Game play and transaction history.</span><br>
+                <span id="policy14">- Cookies and similar technologies to track your activity on our Services and personalize your experience.</span><br>
+
+                <span id="policy15">  2. Use of Information</span><br><br>
+
+                <span id="policy16"> We use the information we collect for the following purposes:</span><br><br>
+
+                <span id="policy17">  - To provide, maintain, and improve our Services and customize your experience.</span><br>
+                <span id="policy18">  - To process and complete transactions, including payments.</span><br>
+                <span id="policy19"> - To communicate with you, respond to your inquiries, and provide customer support.</span><br>
+                <span id="policy20"> - To send you promotional and marketing communications, subject to your preferences.</span><br>
+                  <span id="policy21"> - To enforce our terms of service and protect the security and integrity of our Services.</span><br>
+                  <span id="policy22">  - To comply with legal obligations and assist law enforcement agencies, if necessary.</span><br>
+
+                  <span id="policy23"> 3. Sharing of Information</span><br><br>
+
+                  <span id="policy24">   We may share your information in the following circumstances:</span><br><br>
+
+                  <span id="policy25"> - With our affiliates, partners, and service providers who assist us in operating our Services and providing you with the requested features and services.</span><br>
+                  <span id="policy26"> - With other users of the Services as necessary to facilitate gameplay and tournaments.</span><br>
+                  <span id="policy27">- With third parties for marketing, advertising, or other promotional purposes, subject to your preferences and applicable laws.</span><br>
+                  <span id="policy28"> - In response to a subpoena, court order, or other legal process.</span><br>
+                  <span id="policy29">  - To protect our rights, property, or safety, or the rights, property, or safety of others.</span><br>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <!-- Policy -->
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="rounded shadow py-5 m-3 container">
+              <h2 class="my-font text-center text-black" id="policy45">Our Policy</h2>
+              <div class="border-down"></div>
+              <p class="text-black px-5"><span id="policy30">4. Data Security</span><br><br>
+
+                <span id="policy31">    We take reasonable measures to protect the security of your personal information and to ensure that it is treated securely and in accordance with this Privacy Policy. However, no method of transmission over the Internet or electronic storage is completely secure, and we cannot guarantee absolute security.</span><br><br>
+
+                  <span id="policy32">    5. Your Choices</span><br><br>
+
+                    <span id="policy33">       You can update, correct, or delete your account information by contacting us at [contact information]. You may also opt out of receiving promotional emails from us by following the instructions provided in those emails. Please note that even if you opt out of receiving promotional emails, we may still send you transactional or administrative communications.</span><br><br>
+
+                      <span id="policy34">      6. Third-Party Links and Services</span><br><br>
+
+                        <span id="policy35">     Our Services may contain links to third-party websites or services that are not controlled or operated by us. This Privacy Policy does not apply to those third-party websites or services. We are not responsible for the privacy practices of those third parties, and we encourage you to review their privacy policies before providing any personal information to them.</span><br><br>
+
+                          <span id="policy36">    7. Children's Privacy</span><br><br>
+
+                            <span id="policy37">   Our Services are not intended for individuals under the age of [age]. We do not knowingly collect personal information from children. If we become aware that we have collected personal information from a child without parental consent, we will take steps to delete that information.</span><br><br>
+
+                              <span id="policy38">   8. Changes to this Privacy Policy</span><br><br>
+
+                                <span id="policy39">  We may update this Privacy Policy from time to</span><br><br>
+
+                                  <span id="policy40"> time. The revised policy will be effective immediately upon posting. We encourage you to review this Privacy Policy periodically to stay informed about our practices.</span><br><br>
+
+                                    <span id="policy41">      9. Contact Us</span><br><br>
+
+                                      <span id="policy42">    If you have any questions, concerns, or suggestions regarding this Privacy Policy, please contact us at [contact information].</span><br><br>
+
+                                        <span id="policy43">      By using the Ace Advantage Services, you acknowledge that you have read and understood this Privacy Policy and consent to the collection, use, and disclosure of your personal information as described herein.</span></p>
+            </div>
+          </div>
+        </div>
+
+        </div>
+      </div>
+      <!-- Inner -->
+
+      <!-- Controls -->
+      <a class="carousel-control-prev" href="#introCarousel" role="button" data-mdb-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#introCarousel" role="button" data-mdb-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+  </header>
+  <!--Main Navigation-->
+
+  <!-- MDB -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript" src="js/script.js"></script>
+  <script src="js/language.js"></script>
+  
+</body>
+
+
+
+
+<div class=""></div>
+
+</html>
